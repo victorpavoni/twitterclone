@@ -1,0 +1,38 @@
+.title {
+    text-align: center;
+    display: block;
+}
+.tw-form, .loading {
+    width: 50%;
+    margin: 0 auto;
+}
+.loading {
+    text-align: center;
+}
+.tweets {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.tweets {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.tweets > div {
+    background: hsl(0, 0%, 95%);
+    padding: 12px;
+    border-radius: 4px;
+}
+
+.tweets > div > h3 {
+    word-wrap: break-word;
+}
+
+.tweets > div > p {
+    word-wrap: break-word;
+}
+
+.tweets > div:not(:last-child) {
+    margin-bottom: 8px;
+}
