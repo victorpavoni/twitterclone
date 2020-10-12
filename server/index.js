@@ -2,6 +2,7 @@ const express = require('express');
 const cors = require("cors");
 const monk = require("monk");
 const Filter = require('bad-words');
+const port = process.env.PORT || 5000;
 const rateLimit = require("express-rate-limit");
 
 const app = express();
@@ -56,7 +57,4 @@ app.post("/tweets", (req, res) => {
     });
   }
 })
-
-app.listen(5000, () => {
-  console.log("Listening on http://localhost:5000");
-});
+app.listen(port);
